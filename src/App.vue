@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <Header/>
-    <AddTodo v-on:add-todo="addTodo"/>
-    <Todos v-bind:todos="todos" v-on:del-todo="deleteTodo"/>
+    <Header  />
+    <AddTodo  v-on:add-todo="addTodo"/>
+    <Todos  v-bind:todos="todos" v-on:del-todo="deleteTodo"/>
   </div>
 </template>
 
@@ -25,17 +25,21 @@ export default {
         {
           id: 1,
           title: "Program To-Do List",
-          completed: false
+          completed: false,
+          description: "ola ke ase"
         },
         {
           id: 2,
           title: "Deploy App",
-          completed: false
+          completed: false,
+          description: "programando o ke ase"
+
         },
         {
           id: 3,
           title: "Conquer the world",
-          completed: false
+          completed: false,
+          description: "luijo es un yico"
         }
       ]
     }
@@ -62,5 +66,8 @@ export default {
 body{
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.4;
+  background: rgb(248, 240, 233);
 }
+
+
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="display">
         <div v-for="todo in todos" v-bind:key="todo">
             <TodoItem v-bind:todo="todo" v-on:del-todo="$emit('del-todo', todo.id)"/>
         </div>
@@ -19,5 +19,8 @@ export default {
 </script>
 
 <style scoped>
-
+    .display{
+        border-bottom: 1px #1A3E7A solid;
+    }
+            
 </style>

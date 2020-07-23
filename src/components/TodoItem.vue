@@ -5,10 +5,13 @@
             {{todo.title}}
             <button @click="$emit('del-todo', todo.id)" class="del">x</button>
         </p>
+        <Description v-bind:todo="todo"/>
     </div>
 </template>
 
 <script>
+import Description from "./Description"
+
 export default {
     name: "TodoItem",
     props: ["todo"],
@@ -16,15 +19,18 @@ export default {
         markComplete(){
             this.todo.completed = !this.todo.completed;
         }
+    },
+    components: {
+        Description
     }
 }
 </script>
 
 <style scoped>
     .todo-item{
-        background: #f4f4f4;
+        background: #2D4396;
         padding: 10px;
-        border-bottom: 1px #ccc dotted;
+        border-bottom: 1px #1A3E7A solid;
     }
 
     .is-complete{

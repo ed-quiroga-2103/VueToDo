@@ -1,6 +1,6 @@
 <template>
     <header class="header">
-        <h1>TodoList</h1>
+        <h1>Todo List</h1>
     </header>
 </template>
 
@@ -13,14 +13,14 @@ export default {
 <style scoped>
 
 .header{
-    background: #333;
+    background: #2E2D8A;
     color: #fff;
     text-align: center;
     padding: 10px;
 }
 
 .header-a{
-    color: #fff;
+    color: #3A308A;
     padding-right: 5px;
 }
 
